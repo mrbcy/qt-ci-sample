@@ -64,7 +64,7 @@ jobs:
             msvc_arch: x64
             qt_arch_install: msvc2019_64
     env:
-      targetName: QT-Cli-Sample.exe
+      targetName: samp2_2.exe
     # 步骤
     steps:
       # 安装Qt
