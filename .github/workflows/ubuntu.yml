@@ -58,7 +58,7 @@ jobs:
         run: |
           # 拷贝依赖
           pwd
-          linuxdeploy-x86_64.AppImage --plugin=qt --output=appimage --create-desktop-file --icon-file=empty.svg --executable=bin/release/${targetName} --appdir bin/release/
+          linuxdeploy-x86_64.AppImage --plugin=qt --output=appimage --create-desktop-file --icon-file=${targetName}.svg --executable=bin/release/${targetName} --appdir bin/release/
           ls -a
           ls -a bin/release/
       # 上传artifacts          
