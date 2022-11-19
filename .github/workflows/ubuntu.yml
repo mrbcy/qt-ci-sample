@@ -32,6 +32,8 @@ jobs:
           - os: ubuntu-18.04
             qt_ver: 6.2.2
             qt_arch: gcc_64
+    env:
+      targetName: samp2_2
     steps:
       - name: Install Qt
         uses: jurplel/install-qt-action@v2
