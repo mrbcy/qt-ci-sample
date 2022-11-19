@@ -65,4 +65,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ${{ env.targetName }}_${{ matrix.os }}_${{matrix.qt_ver}}.AppImage
-          path: bin/release/${{ env.targetName }}-*.AppImage
+          path: ${{ env.targetName }}-*.AppImage
