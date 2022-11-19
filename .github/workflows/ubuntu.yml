@@ -55,9 +55,11 @@ jobs:
       - name: package
         run: |
           # 拷贝依赖
+          pwd
           linuxdeploy-x86_64.AppImage --version
-          linuxdeploy-x86_64.AppImage bin/release/${targetName} -appimage -always-overwrite
+          linuxdeploy-x86_64.AppImage --plugin=qt --output=appimage --create-desktop-file --executable=bin/release/${targetName} --appdir bin/release/${targetName}
           ls -a
+          ls -a bin/release/
       # 上传artifacts          
       - uses: actions/upload-artifact@v2
         with:
