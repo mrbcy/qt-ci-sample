@@ -57,7 +57,7 @@ jobs:
           # 拷贝依赖
           pwd
           linuxdeploy-x86_64.AppImage --version
-          linuxdeploy-x86_64.AppImage --plugin=qt --output=appimage --create-desktop-file --executable=bin/release/${targetName} --appdir bin/release/${targetName}
+          linuxdeploy-x86_64.AppImage --plugin=qt --output=appimage --executable=bin/release/${targetName} --appdir bin/release/
           ls -a
           ls -a bin/release/
       # 上传artifacts          
