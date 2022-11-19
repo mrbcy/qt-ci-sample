@@ -70,7 +70,7 @@ jobs:
           name: ${{ env.targetName }}_${{ matrix.os }}_${{matrix.qt_ver}}.zip
           path: |
             ${{ env.targetName }}.AppImage
-            qml
+            ${{ env.Qt5_DIR }}/qml/
       # tag 上传Release
       - name: uploadRelease
         if: startsWith(github.event.ref, 'refs/tags/')
