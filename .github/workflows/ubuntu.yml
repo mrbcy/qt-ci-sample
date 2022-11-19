@@ -58,13 +58,9 @@ jobs:
         run: |
           # 拷贝依赖
           pwd
-          linuxdeploy-x86_64.AppImage --plugin=qt --output=appimage --create-desktop-file --executable=bin/release/${targetName} --appdir bin/release/
+          linuxdeploy-x86_64.AppImage --plugin=qt --output=appimage --create-desktop-file --icon-file=empty.svg --executable=bin/release/${targetName} --appdir bin/release/
           ls -a
           ls -a bin/release/
-      - name: sh-debug
-        continue-on-error: true
-        run: |
-          cat /home/runner/work/_temp/*.sh
       # 上传artifacts          
       - uses: actions/upload-artifact@v2
         with:
