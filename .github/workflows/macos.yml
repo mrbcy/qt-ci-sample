@@ -3,12 +3,16 @@ on:
   push:
     paths:
       - '*.pro'
-      - 'src/**'
+      - '*.h'
+      - '*.cpp'
+      - '*.ui'
       - '.github/workflows/macos.yml'
   pull_request:
     paths:
       - '*.pro'
-      - 'src/**'
+      - '*.h'
+      - '*.cpp'
+      - '*.ui'
       - '.github/workflows/macos.yml' 
 jobs:
   build:
